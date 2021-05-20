@@ -5,13 +5,12 @@
 // Merci d'écrire vos lignes de code dans l'espace en dessous de chaque consigne.
 var landingPage = document.getElementById("landing-page");
 var gamePage = document.getElementById("game-page");
-var bipbip = document.getElementById("bipbip");
 var restartButton = document.getElementById("restart");
 var arrivedPlayers = [];
 
 const COYOTE_RED = "red";
 const COYOTE_YELLOW = "yellow";
-const COYOTE_SPEED = 25;
+const COYOTE_SPEED = 10;
 
 function go() {
   // ---TODO--- 1
@@ -30,6 +29,7 @@ function go() {
   // à l'élément ayant l'id "bipbip".
   // Cela permettra à bipbip de traverser l'écran avant que
   // les coyottes ne commencent à le poursuivre.
+  var bipbip = document.getElementById("bipbip");
   bipbip.className = "animation";
 
   restartButton.style.display = "none";
